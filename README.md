@@ -23,6 +23,14 @@ def main(np):
 ```
 You can also call specific functions from modules
 ```python
+@require("time:Time()")
+def say(time):
+    print(time)
+
+say()
+
+# Or
+
 @require("numpy:array")
 def plt(func, array):
 	arr = func(array)
